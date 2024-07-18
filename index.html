@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Flappy Bird</title>
+        <link rel="stylesheet" href="flappybird.css">
+        <script src="flappybird.js"></script>
+        <style>
+            body {
+                background-color: #1bf6e7; /* Light gray background */
+            }
+            .rectangle {
+            width: 1400px;  /* Width of the rectangle */
+            height: 200px; /* Height of the rectangle */
+            background-color: #e5e2cd; /* Background color */
+            padding: 20px; /* Padding inside the rectangle */
+            border: 2px solid #000; /* Border around the rectangle */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Include padding and border in the element's total width and height */
+        }
+        .partition {
+            flex: 1;
+            margin: 10px;
+            background-color: #09010100; /* Background color of partitions */
+            border: 1px solid #00000000; /* Border around partitions */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .coins {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+            
+        }
+        .coin-img {
+            width: 50px; /* Adjust size as needed */
+            height: 50px;
+        }
+        .partition ul {
+            list-style: none; /* Remove default bullets */
+            padding: 10; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+        .partition li {
+            align-self:flex-start;
+            margin-top: 40px;
+            margin-bottom: 35px; /* Space between each list item */
+        }
+        </style>
+    </head>
+    <body>
+        <canvas bg  id="board"></canvas>
+        <div class="rectangle">
+            <h2>Game Rules</h2>
+            <div class="partition">
+                <ul>
+                    <li>Press Space to jump.</li>
+                    <li>Avoid the pipes and collect coins.</li>
+                    <li>The game ends if you hit a pipe or the ground.</li>
+                </ul>
+    
+                <div class="partition">
+                    <div class="coins">
+                        <img src="coin1.png" alt="Coin 1" class="coin-img">
+                        <img src="coin2.png" alt="Coin 2" class="coin-img">
+                        <img src="coin3.png" alt="Coin 3" class="coin-img">
+                    </div>
+                    <ul>
+                        <li>Mutual Fund Coin: Medium Risk! Medium Rewards!</li>
+                        <li>Stock Market Coin: High Risk! High Rewards!</li>
+                        <li>FD Coin: Low Risk Steady Rewards!</li>
+                    </ul>
+                </div>
+        </div>
+    </body>
+</html>
