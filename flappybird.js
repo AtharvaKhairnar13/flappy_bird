@@ -138,7 +138,7 @@ function update() {
     // Draw score and game over message
     context.fillStyle = "white";
     context.font = "45px sans-serif";
-    context.fillText(score, 5, 900);
+    context.fillText(score, 5, 600);
 
     if (gameOver) {
         context.fillStyle = "white";
