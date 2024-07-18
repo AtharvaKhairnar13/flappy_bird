@@ -136,9 +136,9 @@ function update() {
     clearOffscreenObjects(coinArray, coinWidth);
 
     // Draw score and game over message
-    context.fillStyle = "white";
-    context.font = "45px sans-serif";
-    context.fillText(score, 5, 600);
+    context.fillStyle = "red";
+    context.font = "65px sans-serif";
+    context.fillText(score, 10, 550);
 
     if (gameOver) {
         context.fillStyle = "white";
