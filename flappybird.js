@@ -32,7 +32,7 @@ let coinHeight = 32;
 let coinImages = [];
 
 // Physics
-let velocityX = -5; // Initial speed
+let velocityX = -2; // Initial speed
 let velocityY = 0;
 let gravity = 0.4;
 
@@ -224,13 +224,13 @@ function placeCoins() {
         let speedAdjustment = 0;
 
         if (coinImg.src.includes("coin1.png")) {
-            speedAdjustment = -6; 
+            speedAdjustment = -4; 
             reward=20// Increase speed for red coin
         } else if (coinImg.src.includes("coin2.png")) {
-            speedAdjustment = -10;
+            speedAdjustment = -8;
             reward=50 // Decrease speed for green coin
         } else if (coinImg.src.includes("coin3.png")) {
-            speedAdjustment =  -3;
+            speedAdjustment =  -1;
             reward=10 // Slightly decrease speed for yellow coin
         }
 
@@ -250,7 +250,7 @@ function placeCoins() {
 function moveBird(e) {
     if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX") {
         // Jump
-        velocityY = -6;
+        velocityY = -5;
 
         // Reset game
         if (gameOver) {
@@ -260,7 +260,7 @@ function moveBird(e) {
             score = 0;
             gameOver = false;
             firstPipePlaced = false;
-            velocityX = -5; // Reset speed
+            velocityX = -3; // Reset speed
         }
     }
 }
