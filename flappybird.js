@@ -250,7 +250,7 @@ function placeCoins() {
 function moveBird(e) {
     if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX") {
         // Jump
-        velocityY = -5;
+        velocityY = -7;
 
         // Reset game
         if (gameOver) {
